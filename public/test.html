@@ -13,7 +13,7 @@
         // Without this setTimeout, the specs don't always get execute in webKit browsers
         qunitTap(QUnit, function() { console.log.apply(console, arguments); }, {noPlan: true});
         window.setTimeout(function () {
-            require(['../test/sample_test'], function (one) {
+            require(['../test/sample_test.js'], function (one) {
                 //now trigger them.
                 QUnit.start();
             });
